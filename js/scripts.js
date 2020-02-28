@@ -8,7 +8,13 @@ $(document).ready(function() {
     items.forEach(function(item) {
        stuff.push($("input#" + item).val());
     });
-    console.log(stuff.toUpperCase().sort());
+    console.log(stuff);
+    var finalStuff = stuff.sort().map(function(thing) {
+      return thing.toUpperCase();
+    });
+  
+    console.log(finalStuff);
+
 
     debugger
     // var stuffs = items.map(function(item) {
